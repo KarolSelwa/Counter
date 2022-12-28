@@ -3,7 +3,7 @@ import { Button } from './Button.js'
 
 export const Counter = class {
 
-    constructor(selector, number) {
+    constructor(selector, number = 0) {
         const container = document.querySelector(selector)
 
         if (!container) throw new Error('Container element not found')
