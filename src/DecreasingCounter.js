@@ -3,8 +3,12 @@ import { Button } from './Button.js'
 
 export const DecreasingCounter = class extends Counter {
 
-    constructor(selector) {
+    constructor(selector,number) {
+
         super(selector)
+        
+        this.number = number
+
     }
 
     dec() {
